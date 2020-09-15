@@ -1,0 +1,29 @@
+{% if !boolean %}
+    <p>Oops! This test failed!</p>
+{% else if boolean %}
+    <p>Test passed!</p>
+{% else %}
+    <p>Never see this!</p>
+{% endif %}
+
+{% if strValue=="test" %}
+    <p>Test passed again!</p>
+{% else if false %}
+    <p>Oops! You shouldn't see this!</p>
+{% else %}
+    <p>Never see this!</p>
+{% endif %}
+
+{% if strValue == "fake" %}
+    <p>Oops! This test failed!</p>
+{% else if strValue == "also fake" %}
+    <p>Oops! This test failed!</p>
+{% else %}
+    <p>Else test passed!</p>
+{% endif %}
+
+{% if strValue == "fake" %}
+    <p>Oops! This test failed!</p>
+{% else if strValue == "also fake" %}
+    <p>Oops! This test failed!</p>
+{% endif %}

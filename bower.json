@@ -1,0 +1,25 @@
+{
+    "name": "jinjajs",
+    "version": "0.0.1",
+    "authors": [
+        "Josef van Niekerk <josef.van.niekerk@gmail.com>"
+    ],
+    "description": "JavaScript port of the Jinja templating engine.",
+    "main": "index.html",
+    "keywords": [
+        "templating"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "qunit": "~1.15.0",
+        "jquery": "2.1.1"
+    }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JinjaJS - Example</title>
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css">
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../lib/jinjajs/src/jinjajs.js"></script>
+    <script type="text/javascript" src="../lib/jinjajs/src/utilities.js"></script>
+</head>
+<body>
+<div class="target"></div>
+<script>
+    JinjaJs.render('::base.jinja', {version: '0.0.1'}, '.target');
+</script>
+</body>
+</html>

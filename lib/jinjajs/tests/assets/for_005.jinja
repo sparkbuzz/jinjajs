@@ -1,0 +1,10 @@
+{% for box in boxes %}
+    {{ box.serial }} contains
+    {% for items in contents[box.contents] %}
+        [{{ items }}]
+    {% endfor %}
+
+    {% if box.serial == "002" %}
+        ...done...
+    {% endif %}
+{% endfor %}

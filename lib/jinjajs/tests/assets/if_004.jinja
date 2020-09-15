@@ -1,0 +1,59 @@
+{% if !boolean %}
+    <p>Oops! This test failed!</p>
+{% else if strValue == "test" %}
+    {% if !boolean %}
+        <p>Oops! This test failed badly!</p>
+    {% else if strValue.length == 4 %}
+        <p>Nested test passed!</p>
+    {% endif%}
+{% endif %}
+
+{% if boolean %}
+    {% if !boolean %}
+        <p>Oops! This test failed badly!</p>
+    {% else if strValue.toUpperCase() == "TEST" %}
+        {% if !boolean %}
+            <p>Oops! This test failed VERY badly!</p>
+        {% else if boolean %}
+            <p>Nested test passed, again!</p>
+        {% endif%}
+    {% endif%}
+{% else if !boolean %}
+    <p>Oops! This test failed!</p>
+{% else %}
+    <p>Never see this!</p>
+{% endif %}
+
+{% if boolean %}
+    {% if !boolean %}
+        <p>Oops! This test failed badly!</p>
+    {% else if strValue.toUpperCase() == "TEST" %}
+        {% if !boolean %}
+            <p>Oops! This test failed VERY badly!</p>
+        {% else if !boolean %}
+            <p>ogre!!!</p>
+        {% else %}
+            <p>Nested test, else passed!</p>
+        {% endif%}
+    {% endif%}
+{% else if !boolean %}
+    <p>Oops! This test failed!</p>
+{% else %}
+    <p>Never see this!</p>
+{% endif %}
+
+{% if boolean %}
+    {% if !boolean %}
+        <p>Oops! This test failed badly!</p>
+    {% else if strValue.toUpperCase() == "TEST" %}
+        {% if !boolean %}
+            <p>Oops! This test failed VERY badly!</p>
+        {% else if !boolean %}
+            <p>ogre!!!</p>
+        {% endif%}
+    {% endif%}
+{% else if !boolean %}
+    <p>Oops! This test failed!</p>
+{% else %}
+    <p>Never see this!</p>
+{% endif %}
