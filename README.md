@@ -17,6 +17,6 @@
 # Jinja JS  
 This is an experimental JavaScript port of Python's Jinja templating engine.
 
->**Warning**: This code is old, and hasn't been touched in over 3 years, and in desperate need of 
+>**Warning**: This code is old, and hasn't been touched in many years, and in desperate need of 
 >ES6-ification...don't try this at home!!!
  
